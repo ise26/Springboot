@@ -1,0 +1,16 @@
+<html>
+
+<head>
+</head>
+
+<body>
+	<div>
+		<form method="post" th:action="@{/show}" >
+			<input type="text" name="id" /></br>
+			<input type="submit" value="show images" /></br>
+		</form>
+	</div>
+	<div><img th:src="${msg}"></img></div>
+</body>
+
+</html>

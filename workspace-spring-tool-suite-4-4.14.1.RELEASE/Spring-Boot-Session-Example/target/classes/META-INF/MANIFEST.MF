@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Built-By: Shubham.Ise
+Build-Jdk: 17.0.2
+Implementation-Title: Spring-Boot-Session-Example
+Implementation-Version: 0.0.1-SNAPSHOT
+Implementation-Vendor-Id: com.codeusingjava
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-boot
+ -starter-parent/Spring-Boot-Session-Example
+Created-By: Maven Integration for Eclipse
+

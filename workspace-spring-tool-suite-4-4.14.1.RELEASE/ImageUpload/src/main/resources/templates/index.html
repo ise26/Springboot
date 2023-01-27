@@ -1,0 +1,16 @@
+<html>
+
+<head>
+</head>
+
+<body>
+	<div>
+		<form method="post" th:action="@{/upload}" enctype="multipart/form-data">	
+			<input type="file" name="image" accept="image/*"/></br>
+			<input type="submit" value="upload" /></br>
+		</form>
+	</div>
+	<div><span th:text="${msg}"></span></div>
+</body>
+
+</html>

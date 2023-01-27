@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Spring Boot Session Example</title>
+</head>
+<body>
+	<div>
+		<form th:action="@{/saveMessage}" method="post">
+			<textarea name="msg" cols="40" rows="2"></textarea>
+			<br> <input type="submit" value="Save Message" />
+		</form>
+	</div>
+	<div>
+		<h2>User Sessions</h2>
+		<ul th:each="message : ${sessionMessages}">
+			<li th:text="${message}">msg</li>
+		</ul>
+	</div>
+	<div>
+		<form th:action="@{/delete}" method="post">
+			<input type="submit" value="Delete Session" />
+		</form>
+	</div>
+</body>
+</html>
